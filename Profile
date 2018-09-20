@@ -1,0 +1,10 @@
+Windows&MacOS app
+MSI/EXE/DLL/
+C#/OC/Shell/Python
+RPM/BAT/
+
+
+
+
+
+
