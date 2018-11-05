@@ -1,10 +1,22 @@
 Windows&MacOS app
 MSI/EXE/DLL/
-C#/OC/Shell/Python
+c++ & C# & OC & Shell & Python
 RPM/BAT/
 
+proj1 WS:
+    develop app on Windows and Mac OS.
+    Windows: installation file(.msi based on WixToolset) and application file(.exe based on C#)
+    Mac: pkg file based on objective-c
+    
+    Whitelist based on Shell:
+        with shell, user can add/check/delete/update ips to whitelist which has right to access website.
+    
+    fix bug 
 
-
-
-
-
+proj2 Rpd:
+    fix bug
+    
+    
+proj3 SDK based on rpm:
+    license develop:
+    
