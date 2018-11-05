@@ -1,9 +1,10 @@
-Windows&MacOS app
-MSI/EXE/DLL/
-c++ & C# & OC & Shell & Python
-RPM/BAT/
+Skill:
+    c++/c#/WPF/shell/objective-c/python/WixToolset
+    tomcat/
 
-proj1 WS:
+
+
+proj1 WS(2017-07 to 2018-09):
     develop app on Windows and Mac OS.
     Windows: installation file(.msi based on WixToolset) and application file(.exe based on C#)
     Mac: pkg file based on objective-c
@@ -11,12 +12,24 @@ proj1 WS:
     Whitelist based on Shell:
         with shell, user can add/check/delete/update ips to whitelist which has right to access website.
     
-    fix bug 
+    fix bug()
 
-proj2 Rpd:
-    fix bug
+proj2 Rpd(2018-09 to now):
+    fix bug(UI/call control/media process)
     
     
-proj3 SDK based on rpm:
+proj3 SDK based on rpm(2018-11 to):
     license develop:
     
+
+
+
+
+
+
+
+
+
+
+
+
