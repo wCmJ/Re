@@ -29,6 +29,27 @@ proj1 WS(2017-07 to 2018-09):
         /etc/shadow:
         username:password:last password change(since 1970-1-1):minimum:maximum:warn:inactive:expire
         
+        whitelist.sh
+        iptables:
+        
+        grep:
+        
+        =~/regular expression:
+        
+        sed:
+        
+        awk:
+        
+        PGPASSWORD=Polycom@12#$ psql -U postgres postgres -c 'select * from ca_wsp.whitelistswitch' > status
+        PGPASSWORD=Polycom@12#$ psql -U postgres postgres -qc "update ca_wsp.whitelistswitch set enableflag='0'"
+		PGPASSWORD=Polycom@12#$	psql -U postgres postgres -qc "delete from ca_wsp.whitelistconfig where subnet like '%$IP%'"
+
+        $@: stores all the arguments in a list of string
+        $*: stores all the arguments as a single string
+        $#: stores the number of arguments
+        
+        
+        
     fix bugs()
 
 proj2 Rpd(2018-09 to now):
