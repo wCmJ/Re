@@ -61,7 +61,19 @@ proj2 Rpd(2018-09 to now):
 proj3 SDK based on rpm(2018-11 to):
     license develop:
     
+RPC: remote procedure call
+server A			server B
+step1: establish a connect
+step2: application in A tells underlying RPC framework how to connect to server B, such as host/ip/port/method name by endpoint URI(based on web service protocol stack) or query on the UDDI server or RMI registry 
+step3: when application in server A starts to call, parameters will be transferred to server B, and these parameters will be changed to binary with serialize and marshal cause the network protocol is based on binary.
+step4: when server B received the request, it did anti-serialize and anti-marshal to recover the data in memory, then get the appropriate method to call locally, and get the return value.
+step5: return value will be sent to application in server A, should do serialize/marshal - send - receive - anti-serialize/marshal - send to application in A.
 
+synchronization: caller does not return until get the result
+asynchronization: caller return immediately 
+
+block: the thread will be hang up when waiting the result
+unblock: the thread continue do when waiting the result
 
 
 
