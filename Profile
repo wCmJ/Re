@@ -12,6 +12,8 @@ Skill:
 
 proj1 WS(2017-07 to 2018-09):
     develop app on Windows and Mac OS.
+    develop an app that works as bridge between web client and os application.
+    
     Windows: installation file(.msi based on WixToolset) and application file(.exe based on C#)
     Mac: pkg file based on objective-c
     
