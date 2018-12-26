@@ -32,7 +32,16 @@ proj1 WS(2017-07 to 2018-09):
         username:password:last password change(since 1970-1-1):minimum:maximum:warn:inactive:expire
         
         whitelist.sh
-        iptables:
+        iptables firewall:
+			chain: 
+				prerouting		->		route? 		->		forward				->
+																											postrouting
+										input		->		local process		->		output		->				
+		
+			table:
+				filter:	used for packet filtering 	(input forward output)
+				nat:	address translation			(PREROUTING	POSTROUTING	OUTPUT)
+				mangle:	used for special-purpose processing of packets	()
         
         grep:
         
@@ -60,6 +69,24 @@ proj2 Rpd(2018-09 to now):
     
 proj3 SDK based on rpm(2018-11 to):
     license develop:
+    
+proj4 HID 2018-12:
+	target: unify HID handware and soft client: call status, led, mute, volume up/down
+	content: call				
+					idle -> dialpending -> ringing -> connected -> disconnected
+										  ^
+										  |
+									   incomingcall
+    method:	based HID descriptor(hard coded array of bytes that describes the device's data packets, amount of packets, size of the packets, the purpose of each byte and bit in the packet)
+			vendor usage	telephony usage		consumer usage
+			report protocol(vendor defined)		boot protocol
+			report type: input(device to host)	feature(deal with device configuration)		output(host to device)
+			report mode
+			host 		device
+			1. host retrieve the HID descriptor from the device and parse it before it can fully communicate with the device.
+			2. 
+    
+    
     
 RPC: remote procedure call
 server A			server B
